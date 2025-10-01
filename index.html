@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khaana | Our Story</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4a7c59;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #4a7c59;
+    }
+
+    .history {
+      background: #e8f5e9;
+      padding: 20px;
+      border-left: 6px solid #4a7c59;
+      margin: 30px 0;
+    }
+
+    .highlight {
+      color: #2a9d8f;
+      font-style: italic;
+    }
+
+    .secondary-text {
+      color: #e76f51;
+      font-weight: bold;
+      font-family: "Courier New", monospace;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .graphics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 30px 0;
+    }
+
+    .graphics img {
+      width: 150px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #ddd;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Khaana</h1>
+    <p><em>Healthy Catering for Every Occasion</em></p>
+  </header>
+
+  <main>
+    <h2>Our Story</h2>
+    <p>
+      At <strong>Khaana</strong>, we believe that <span class="highlight">food is more than fuel</span> It’s a way to bring people together,
+      nourish communities, and create memorable experiences. Founded with a passion for <u>healthy living</u> and
+      sustainable foodservice, Khaana has grown into a trusted catering company serving <span class="secondary-text">wholesome meals</span>
+      with a touch of creativity.
+    </p>
+
+    <!-- Hero image / catering -->
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNjA3fDB8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwZm9vZHxlbnwwfHx8fDE2OTcwMDQxNTM&ixlib=rb-4.0.3&q=80&w=1080" alt="Healthy catering spread">
+
+    <div class="history">
+      <h2>Our History</h2>
+      <p>
+        Khaana began in 2015 as a small family run business offering fresh, home-style meals to local
+        wellness events. With a growing demand for nutritious catering, we expanded our offerings to
+        corporate gatherings, weddings, and community celebrations. Today, Khaana blends modern catering
+        with timeless values: <i>health</i>, balance, and care.
+      </p>
+    </div>
+
+    <h2>Why Choose Khaana?</h2>
+    <p>
+      Our clients love our service because we focus on <strong>quality ingredients</strong> and <u>creative presentation</u>. 
+      Here’s what we offer:
+    </p>
+
+    <ul>
+      <li>Customizable healthy menus</li>
+      <li>Eco-friendly packaging</li>
+      <li>Flexible catering for all events</li>
+    </ul>
+
+    <h2>Popular Dishes</h2>
+    <ol>
+      <li>Quinoa & Veggie Bowls</li>
+      <li>Grilled Salmon with Seasonal Veggies</li>
+      <li>Fresh Fruit Platters</li>
+    </ol>
+
+    <!-- Graphics section -->
+    <div class="graphics">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Salad Icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1998/1998616.png" alt="Healthy Food Icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Catering Tray Icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046782.png" alt="Fruit Bowl Icon">
+    </div>
+
+    <p>
+      Learn more about healthy eating at <a href="https://www.eatright.org/" target="_blank">EatRight.org</a>.<br>
+      <a href="mailto:teagan@example.com">Contact me</a> for inquiries or catering requests.
+    </p>
+
+    <p>
+      <a href="KhaanaMenu.pdf" download>Download Our Sample Menu</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Khaana Catering | Nourishing Communities with Healthy Choices</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    // Automatically show last modified date
+    document.getElementById("lastModified").textContent = new Date(document.lastModified).toLocaleDateString();
+  </script>
+</body>
+</html>

@@ -1,114 +1,157 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khaana | Our Story</title>
+  <title>KHAANA · Our Story</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: beige;
-      color: black;
+    :root {
+      --ink: #222222;
+      --muted: #747474;
+      --sand: #f6f6f5;
+      --leaf: #2e7d32;
+      --sage: #8fbf8f;
+      --card: #ffffff;
+      --border: #e8e8e8;
+    }
+
+    html, body { margin:0; padding:0; background: var(--sand); color: var(--ink); }
+    body { font-family: Inter, Arial, Helvetica, sans-serif; line-height: 1.6; }
+
+    header {
+      padding: 28px 20px 22px;
+      border-bottom: 2px solid var(--sage);
+      background: var(--card);
       text-align: center;
     }
 
-    header {
-      background: darkgreen;
-      color: white;
-      padding: 30px;
-    }
+    .brand { font-family: Georgia, "Times New Roman", serif; font-size: 30px; letter-spacing: .4px; }
+    .brand em { color: var(--leaf); font-style: italic; }
+    .tagline { color: var(--muted); font-size: 15px; margin-top: 6px; }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+    main { max-width: 900px; margin: 0 auto; padding: 28px 20px 32px; }
 
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: left;
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 16px 0 8px;
     }
+    h1 { font-size: 26px; }
+    h2 { font-size: 20px; }
 
-    h2 {
-      color: darkgreen;
-    }
+    .lead { font-size: 18px; margin-bottom: 14px; }
 
-    .history {
-      padding: 20px;
-      margin: 30px 0;
-      border-left: 6px solid darkgreen;
-      font-family: Georgia, serif;
-      color: seagreen;
-    }
+    .highlight { color: var(--leaf); font-style: italic; }
+    .secondary-text { color: orangered; font-weight: bold; font-family: Courier, monospace; }
 
     img {
-      max-width: 300px;
+      max-width: 100%;
       height: auto;
       display: block;
       margin: 20px auto;
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
-    footer {
-      background: lightgray;
+    .history {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--leaf);
       padding: 20px;
+      margin: 24px 0;
+      border-radius: 10px;
+      font-family: Georgia, serif;
+    }
+
+    .graphics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      margin: 28px 0;
+    }
+    .graphics img {
+      width: 120px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #eef4ef;
+      padding: 8px;
+    }
+
+    a { color: var(--leaf); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--card);
+      padding: 14px 20px;
       text-align: center;
-      margin-top: 40px;
-      font-size: 0.9rem;
+      font-size: 12px;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Khaana Catering</h1>
-    <p><b>Fresh.</b> <u>Healthy.</u> <i>Delicious.</i></p>
+    <div class="brand">KHAANA <em>Our Story</em></div>
+    <div class="tagline">Healthy catering for every occasion.</div>
   </header>
 
   <main>
-    <h2>Our Story</h2>
+    <h1>Our Story</h1>
+    <p class="lead">
+      At <b>KHAANA</b>, we believe that <i>food is more than fuel</i> —
+      it’s a way to <u>connect communities</u>, share culture, and create memorable experiences.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" 
+         alt="Healthy catering spread">
+
     <div class="history">
+      <h2>Our History</h2>
       <p>
-        Khaana began in <span style="color: darkred; font-size: 1.2rem; font-family: Courier;">2015</span> 
-        as a small family-run business offering <b>nutritious meals</b> to the community. 
-        With a growing demand for <i>health-focused catering</i>, we expanded to weddings, 
-        corporate gatherings, and large events. 
+        Founded in <font color: "red"> as a family-run kitchen, KHAANA started
+        serving small wellness events. With rising demand, we expanded to <b>weddings</b>, 
+        <i>corporate gatherings</i>, and large community festivals. 
       </p>
     </div>
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" 
-         alt="Healthy Catering Platter">
 
-    <h2>Our Services</h2>
+    <h2>Why Choose Us?</h2>
     <ul>
-      <li>Corporate Catering</li>
-      <li>Wedding Catering</li>
-      <li>Private Events</li>
+      <li>Customizable healthy menus</li>
+      <li>Eco-friendly packaging</li>
+      <li>Flexible catering for all events</li>
     </ul>
 
-    <h2>Steps to Book Us</h2>
+    <h2>Popular Dishes</h2>
     <ol>
-      <li>Fill out our inquiry form</li>
-      <li>Select your custom menu</li>
-      <li>Enjoy your event stress-free!</li>
+      <li>Quinoa & Veggie Bowls</li>
+      <li>Grilled Salmon with Seasonal Veggies</li>
+      <li>Fresh Fruit Platters</li>
     </ol>
 
-    <p>
-      Learn more about healthy catering at 
-      <a href="https://www.eatright.org/" target="_blank">EatRight.org</a>.
-    </p>
-    <p>
-      <a href="mailto:contact@khaana.com">Contact Me</a>
-    </p>
+    <div class="graphics">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Salad Icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1998/1998616.png" alt="Healthy Food Icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Catering Tray Icon">
+    </div>
 
     <p>
-      <a href="menu.pdf" download>Download Our Sample Menu (PDF)</a>
+      Learn more about nutrition at 
+      <a href="https://www.eatright.org/" target="_blank" rel="noopener">EatRight.org</a>.
+    </p>
+    <p>
+      <a href="mailto:teagan@example.com">Contact Me</a> for inquiries.
+    </p>
+    <p>
+      <a href="menu.pdf" download class="btn">Download Our Sample Menu</a>
     </p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Khaana Catering</p>
-    <p>Last Modified: <script>document.write(document.lastModified);</script></p>
+    Date last modified: <span id="lastmod" class="underline"></span>
   </footer>
+
+  <script>
+    document.getElementById('lastmod').textContent = document.lastModified;
+  </script>
 </body>
 </html>
